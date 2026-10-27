@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Riptide Chords — Beginner Sheet</title><meta name="description" content="A print-style guitar sheet with fingering and strumming integrated with lyric lines."><link rel="stylesheet" href="styles.css"><script defer src="app.js"></script></head>
+<body class="beginner">
+<div class="toolbar" aria-label="Sheet controls"><div class="toolbar-inner"><label class="mode-label"><input type="checkbox" id="beginner-toggle" checked> Beginner mode</label><span class="toolbar-divider"></span><button id="focus-toggle" aria-pressed="false">Focus</button><button id="edit-open">Edit / paste sheet</button><a class="customize-link" href="#customize-sheet">Customize / print</a><span class="toolbar-spacer"></span><button id="guide-open" aria-label="How to read the sheet">How to read</button></div></div>
+<div class="sheet-workspace">
+<main class="paper" id="top">
+<header class="sheet-header"><div class="sheet-title"><h1>Riptide Chords <span>by Vance Joy</span></h1><span class="concept-mark">UG <small>REDESIGN CONCEPT</small></span></div><div class="metadata"><div>Difficulty: <strong>beginner</strong></div><div>Tuning: <strong>E A D G B e</strong></div><div>Capo: <strong>1st fret</strong></div><div>Key: <strong>B♭m</strong></div></div></header>
+<div class="reading-key"><span><strong>1–4</strong> fingers</span><span><strong>○</strong> open</span><span><strong>×</strong> mute</span><span><strong>↓ ↑</strong> strum</span><span><strong>·</strong> silent movement</span><span class="relative-note">Frets relative to capo</span></div>
+<div class="excerpt-note" id="excerpt-note">Default sheet shown. <button id="paste-link">Edit / paste your chord-and-lyric sheet</button> to customize it.</div>
+<p class="selection-hint">Select a chord, diagram, or lyric position to move the highlight. Pause keeps your place; Clear highlight removes it.</p>
+<div id="song-sheet"></div>
+<footer class="sheet-footer"><p>David Gu · LMC 3403 · Independent interface redesign</p><p>Rhythm marks are illustrative practice guidance. <a href="https://tabs.ultimate-guitar.com/tab/print?app_utm_campaign=Export2pdfDownload&amp;flats=0&amp;font_size=0&amp;id=1237247&amp;is_ukulele=0&amp;simplified=0&amp;transpose=0" target="_blank" rel="noopener noreferrer">Original print view ↗</a></p></footer>
+</main>
+<aside class="customize-panel" id="customize-sheet" aria-labelledby="customize-title" tabindex="-1">
+  <header><span class="panel-eyebrow">MAKE IT YOURS</span><h2 id="customize-title">Customize sheet</h2><p>Adjust your sheet here, then take it to practice.</p></header>
+  <fieldset><legend>Text &amp; spacing</legend>
+    <label for="sheet-size">Text size <output id="sheet-size-value" for="sheet-size">16 px</output></label>
+    <input id="sheet-size" type="range" min="12" max="20" step="1" value="16">
+    <label for="sheet-spacing">Line spacing</label>
+    <select id="sheet-spacing"><option value="comfortable">Comfortable</option><option value="compact">Compact</option></select>
+  </fieldset>
+  <fieldset><legend>Learning guides</legend>
+    <label class="panel-check"><input id="show-diagrams" type="checkbox" checked> Chord fingerings</label>
+    <label class="panel-check"><input id="show-rhythm" type="checkbox" checked> Strumming &amp; beat counts</label>
+    <p>Beginner mode turns both guides on. Turn either off to suit your practice.</p>
+  </fieldset>
+  <div class="panel-print"><button id="print">Print / Save PDF</button><p>Your choices appear in the printout. Select <strong>Save as PDF</strong> in your browser’s print window. Choose paper size and orientation there.</p></div>
+  <button id="customize-reset" class="reset-customization">Reset customization</button>
+</aside>
+</div>
+<div class="practice-bar" role="region" aria-label="Visual practice controls"><div class="practice-inner"><button id="play" class="play" aria-label="Start visual guide">▶</button><span id="play-position">Intro · Visual guide</span><button id="clear-highlight" disabled>Clear highlight</button><div class="tempo"><label for="tempo"><output id="bpm">102</output> BPM</label><input id="tempo" type="range" min="50" max="140" step="1" value="102" aria-label="Practice tempo"></div><label class="follow"><input id="follow" type="checkbox" checked> Follow sheet</label><button id="next">Next section ↓</button></div></div>
+<button id="focus-exit" class="focus-exit" hidden>Exit focus <kbd>Esc</kbd></button>
+<dialog id="editor"><form method="dialog"><header><h2>Edit chord & lyric sheet</h2><button aria-label="Close editor" class="close">×</button></header></form><p>Paste the text from your copy of the sheet. Put chords on the line above the lyrics; spaces determine where each chord changes. Use [Section names] for navigation.</p><label for="sheet-input">Your sheet <span>(stored only in this browser)</span></label><textarea id="sheet-input" spellcheck="false" wrap="off"></textarea><div class="editor-example">Example format: <code>Am            G                  C</code><br><span>Chord names and diagrams stay anchored to the same characters in the line below.</span></div><p id="editor-error" role="alert"></p><div class="dialog-actions"><button id="reset">Restore default sheet</button><button id="editor-cancel">Cancel</button><button id="editor-save" class="primary">Apply to sheet</button></div></dialog>
+<dialog id="guide"><form method="dialog"><header><h2>Read down, then play across.</h2><button class="close" aria-label="Close guide">×</button></header></form><ol><li>The <strong>fretboard</strong> sits above the exact place its chord changes. Low E is on the left. 1 = index, 2 = middle, 3 = ring, 4 = little finger.</li><li>Read the <strong>chord and lyric</strong> together. The diagram, chord label, and lyric position share the same vertical anchor.</li><li>Follow the <strong>strumming beneath that phrase</strong>. Count 1 & 2 & 3 & 4 &. Dots mean keep moving without striking the strings.</li><li><strong>Beginner mode</strong> hides or shows the added guides. Focus hides controls. The visual guide follows a demonstration pattern; it does not play audio or track your guitar.</li></ol><p><strong>Customize / print</strong> opens the sheet controls. Change text size and line spacing, or choose fingerings and strumming separately. Use Print / Save PDF to print your current sheet or save it from the browser’s print window.</p><p>Click or tap a chord, diagram, strumming beat, or lyric position to choose where the highlight goes. Chord buttons also work with Tab and Enter or Space. Pausing keeps the highlight; Play continues from that position. Clear highlight pauses and removes the highlight while keeping your place.</p><p>Space: play/pause · B: Beginner mode · F: focus · Esc: exit focus. Shortcuts stay inactive while typing.</p><p>To load the full song, paste your own chord-and-lyric text into the editor. Diagrams are available for Am, G, C, and Fmaj7; other chords keep their labels.</p></dialog>
+<div class="sr-only" id="status" role="status" aria-live="polite"></div>
+<noscript>Enable JavaScript to display this sheet.</noscript>
+</body></html>

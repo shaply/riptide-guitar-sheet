@@ -1,0 +1,78 @@
+:root{--ink:#202020;--muted:#777;--line:#d9d9d9;--highlight:#fff5ca;--scale:10px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:#eeeeed;color:var(--ink);font:14px/1.5 Arial,Helvetica,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer;color:inherit;border:1px solid #ccc;border-radius:3px;padding:6px 12px;background:#fff}button:hover{background:#f2f2f2}button:disabled{opacity:.4;cursor:default}a{color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:2px solid #2260a4;outline-offset:3px}input{accent-color:#333}.toolbar{position:sticky;top:0;background:#f9f9f9;border-bottom:1px solid #d4d4d4;z-index:20}.toolbar-inner{display:flex;align-items:center;gap:12px;max-width:1040px;padding:13px 20px;margin:auto;min-height:57px}.toolbar button{font-size:12px;padding:5px 9px;border-color:transparent;background:none}.toolbar button:hover{border-color:#ccc;background:white}.toolbar-spacer{flex:1}.mode-label{display:flex;align-items:center;gap:7px;font-weight:600;font-size:12px;white-space:nowrap}.mode-label input{width:15px;height:15px;margin:0}.toolbar-divider{height:19px;width:1px;background:#ddd}.paper{background:white;max-width:1000px;min-height:calc(100vh - 58px);padding:42px 58px 65px;margin:25px auto 110px;box-shadow:0 1px 5px #0000000b;overflow:hidden}.sheet-title{display:flex;justify-content:space-between;align-items:flex-start;gap:25px}h1{font-size:25px;line-height:1.3;margin:0 0 19px;letter-spacing:-.5px}h1 span{font-weight:400;white-space:nowrap}.concept-mark{font-size:27px;line-height:1;letter-spacing:-3px;font-weight:800;font-style:italic;color:#999}.concept-mark small{display:block;font-size:6px;letter-spacing:.5px;font-style:normal;font-weight:400;margin-top:5px;white-space:nowrap}.metadata{display:grid;grid-template-columns:1fr 1fr;font-size:12px;gap:5px 30px;max-width:530px;margin-bottom:25px}.metadata strong{font-weight:500}.metadata div:nth-child(3) strong{font-weight:700}.sheet-header{border-bottom:1px solid #aaa}.reading-key{display:flex;gap:17px;align-items:center;padding:14px 0 4px;color:#777;font-size:10px;flex-wrap:wrap}.reading-key strong{color:#333;margin-right:3px}.relative-note{margin-left:auto;font-size:9px}.excerpt-note{font-size:11px;color:#888;margin-top:15px;padding-bottom:13px;border-bottom:1px solid #eee}.excerpt-note button{font-size:inherit;color:#555;border:0;background:none;padding:0;text-decoration:underline;text-underline-offset:3px}.song-section{margin:31px 0 40px;scroll-margin-top:88px}.section-heading{display:flex;align-items:baseline;gap:14px;margin:0 0 17px;font-family:"Courier New",monospace}.section-heading h2{font-size:16px;line-height:1.3;margin:0;font-weight:700}.section-heading span{font-family:Arial,sans-serif;color:#999;font-size:10px;font-weight:400}.sheet-line-wrap{overflow-x:auto;padding-bottom:10px;scrollbar-width:thin;scrollbar-color:#ddd transparent}.sheet-line{font-family:"Courier New",Courier,monospace;font-size:16px;line-height:1.5;position:relative;width:max(100%,calc(var(--cols)*1ch));margin-bottom:17px;isolation:isolate}.diagram-line{height:93px;position:relative}.anchor{position:absolute;left:calc(var(--pos)*1ch);top:0}.fretboard{width:63px;height:87px;display:block}.chord-line{position:relative;height:26px}.chord-anchor{font-weight:bold;font-size:16px;white-space:nowrap;padding:0 3px 0 0}.lyric-line{white-space:pre;margin:0;min-height:25px;font:inherit;color:#202020}.placeholder-line{color:#999;font-style:italic;font-size:13px}.rhythm-line{position:relative;height:49px;margin-top:7px;color:#555}.rhythm-anchor{position:absolute;left:calc(var(--pos)*1ch);top:0;width:108px}.rhythm-counts,.rhythm-arrows{display:grid;grid-template-columns:repeat(8,1fr);text-align:center}.rhythm-counts{font:9px/15px Arial,sans-serif;color:#999}.rhythm-arrows{font:18px/22px Arial,sans-serif}.rhythm-arrows span{border-bottom:1px solid #ccc;padding-bottom:2px}.rhythm-arrows .rest{color:#bbb}.rhythm-arrows .beat-now{background:#f2d765;color:#111}.rhythm-anchor .beat-now:first-child{border-radius:2px 0 0 2px}.anchor.is-active{background:var(--highlight)}.rhythm-anchor.is-active{background:#fffbec}.sheet-line.active-line .lyric-line{background:linear-gradient(to right,#fff9e1,transparent)}.plain-line{font:16px/1.6 "Courier New",monospace;white-space:pre;min-width:max-content}.section-note{font:italic 12px/1.6 "Courier New",monospace;color:#777;white-space:pre-wrap;margin-bottom:16px}.section-empty{font:14px "Courier New",monospace;color:#aaa}.unsupported{font-size:9px;color:#aaa;font-family:Arial,sans-serif;line-height:1.4;width:75px;padding-top:22px}.sheet-footer{border-top:1px solid #ddd;margin-top:50px;padding-top:15px;color:#999;font-size:9px}.sheet-footer p{margin:5px 0}.sheet-footer a{margin-left:12px}.practice-bar{position:fixed;bottom:0;left:0;right:0;background:#f9f9f9eF;border-top:1px solid #d2d2d2;z-index:25;backdrop-filter:blur(12px)}.practice-inner{max-width:1040px;padding:13px 20px;display:flex;align-items:center;gap:18px;margin:auto;min-height:67px}.play{border-radius:50%;background:#333;color:white;border-color:#333;width:33px;height:33px;display:grid;place-items:center;padding:0;font-size:12px;flex-shrink:0}.play:hover{background:#555}#play-position{font-size:11px;color:#777;min-width:150px}.tempo{margin-left:auto;display:flex;align-items:center;gap:13px}.tempo label{font-size:10px;white-space:nowrap;color:#666}.tempo input{width:95px;height:3px}.follow{display:flex;align-items:center;gap:5px;font-size:10px;white-space:nowrap;color:#777}.follow input{width:12px;height:12px;margin:0}#next{font-size:11px;white-space:nowrap;border-color:#bbb}.focus-exit{position:fixed;right:22px;top:18px;z-index:30;font-size:11px;box-shadow:0 1px 10px #0001;background:#fff}kbd{font:9px Arial,sans-serif;color:#999;margin-left:10px}.focus .toolbar,.focus .reading-key,.focus .excerpt-note,.focus .sheet-footer{display:none}.focus .paper{margin-top:0;box-shadow:none;max-width:1060px;padding-top:35px}.focus{background:white}.focus .sheet-header{border-color:#ddd}.focus .metadata{margin-bottom:15px}.focus .song-section{scroll-margin-top:50px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}body:not(.beginner) .diagram-line,body:not(.beginner) .rhythm-line,body:not(.beginner) .reading-key{display:none}body:not(.beginner) .sheet-line{margin-bottom:10px}body:not(.beginner) .song-section{margin-top:28px}dialog{width:calc(100% - 34px);max-width:780px;border:1px solid #bbb;border-radius:4px;padding:24px 28px;color:#333;max-height:90vh;box-shadow:0 20px 90px #0003}dialog::backdrop{background:#0006}dialog header{display:flex;align-items:center;justify-content:space-between;gap:20px}dialog h2{font-size:19px;margin:0}dialog .close{border:0;font-size:24px;padding:0;background:none;color:#777}dialog p,dialog li{font-size:12px;line-height:1.8;color:#777}dialog li{margin-bottom:14px}dialog label{font-size:12px;display:block;margin:18px 0 8px}dialog label span{color:#aaa;font-size:10px}textarea{display:block;width:100%;height:310px;resize:vertical;font:13px/1.7 "Courier New",monospace;border:1px solid #bbb;padding:15px;background:#fcfcfc;color:#333;tab-size:4}.editor-example{font-size:11px;color:#888;margin:12px 0}.editor-example code{font-size:11px;color:#555;white-space:pre}.editor-example span{display:block;margin-top:5px}.dialog-actions{display:flex;justify-content:flex-end;gap:10px;padding-top:10px}.dialog-actions button{font-size:12px}.dialog-actions #reset{margin-right:auto;border:0;padding-left:0;color:#888}.dialog-actions .primary{background:#333;border-color:#333;color:white}#editor-error{color:#a22;font-size:12px;margin:0}@media(max-width:1060px){.paper{margin:15px 20px 100px;padding:36px 40px}.toolbar-inner,.practice-inner{padding-left:25px;padding-right:25px}}@media(max-width:700px){.toolbar-inner{gap:4px;padding:10px 12px;flex-wrap:wrap}.toolbar button{font-size:10px;padding:5px 6px}.mode-label{font-size:11px}.toolbar-divider{margin:0 4px}.toolbar-spacer{display:none}.toolbar #guide-open{margin-left:auto}.paper{margin:12px 10px 140px;padding:27px 22px 40px}.sheet-title{gap:12px}h1{font-size:21px;max-width:220px}h1 span{display:block;font-size:16px;margin-top:5px}.concept-mark{font-size:23px;margin-top:3px}.concept-mark small{font-size:5px}.metadata{font-size:11px;gap:7px 15px;margin-bottom:20px}.reading-key{font-size:9px;gap:8px 15px;padding-top:12px}.relative-note{margin-left:0;width:100%}.excerpt-note{font-size:10px;line-height:1.7}.section-heading{gap:10px}.section-heading h2{font-size:15px}.section-heading span{font-size:9px}.song-section{margin-top:27px}.sheet-line-wrap{margin-right:-12px;padding-right:12px}.practice-inner{flex-wrap:wrap;padding:10px 16px;gap:9px 14px}#play-position{flex:1;min-width:150px}.tempo{margin-left:0;gap:8px}.tempo input{width:75px}.follow{margin-left:auto;font-size:9px}#next{font-size:10px;padding:5px 9px}.sheet-footer{font-size:8px;line-height:1.8}.sheet-footer a{display:block;margin:0}.focus .paper{padding:65px 20px 40px;margin:0 0 140px}.focus .focus-exit{top:12px;right:15px}.focus .sheet-title .concept-mark{display:none}dialog{padding:20px}dialog h2{font-size:17px}.dialog-actions{gap:8px}.dialog-actions button{font-size:10px;padding:6px 8px}textarea{font-size:12px}}@media print{@page{margin:15mm}body{background:white}.toolbar,.practice-bar,.focus-exit,.excerpt-note,dialog{display:none!important}.paper,.focus .paper{max-width:none;width:100%;margin:0;padding:0;box-shadow:none;overflow:visible}.sheet-line-wrap{overflow:visible;padding:0}.sheet-line{break-inside:avoid}.sheet-header{break-after:avoid}.section-heading{break-after:avoid}.song-section{margin:24px 0 28px}.sheet-footer{font-size:8px}.anchor.is-active,.rhythm-anchor.is-active,.sheet-line.active-line .lyric-line{background:transparent}.rhythm-arrows .beat-now{background:transparent}a{color:inherit;text-decoration:none}.reading-key{display:flex!important}.sheet-line{font-size:14px}.chord-anchor{font-size:14px}.rhythm-anchor{left:calc(var(--pos)*1ch);width:100px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.instrumental .lyric-line{display:none}.instrumental .rhythm-line{margin-top:0}
+/* Section offsets already account for the sticky toolbar. */
+html{scroll-padding-top:0}
+
+/* Peer-review revision: sheet customization stays beside the reading surface. */
+:root{--sheet-size:16px}
+.sheet-workspace{display:grid;grid-template-columns:minmax(0,1000px) 250px;gap:24px;max-width:1314px;margin:25px auto 110px;padding:0 20px;align-items:start}
+.sheet-workspace .paper{width:100%;min-width:0;margin:0}
+.customize-panel{position:sticky;top:82px;background:#fafafa;border:1px solid #d4d4d4;border-radius:4px;padding:22px 20px;scroll-margin-top:80px}
+.panel-eyebrow{font-size:9px;letter-spacing:1.5px;color:#777}
+.customize-panel h2{font-size:18px;letter-spacing:-.3px;margin:6px 0 7px}
+.customize-panel p{font-size:11px;line-height:1.7;color:#666;margin:0}
+.customize-panel fieldset{border:0;border-top:1px solid #ddd;margin:20px 0 0;padding:15px 0 0;min-width:0}
+.customize-panel legend{padding:0 6px 0 0;margin-bottom:0;font-weight:600;font-size:12px}
+.customize-panel label{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;margin:9px 0}
+.customize-panel output{font-size:11px;color:#666;font-variant-numeric:tabular-nums}
+.customize-panel input[type=range]{width:100%;margin:6px 0 15px}
+.customize-panel select{width:100%;padding:7px;border:1px solid #bbb;border-radius:3px;background:white;color:#333;font-size:12px}
+.customize-panel .panel-check{justify-content:flex-start;line-height:1.5;margin:12px 0}
+.panel-check input{width:14px;height:14px;margin:0;flex-shrink:0}
+.panel-print{margin-top:20px;padding-top:20px;border-top:1px solid #ddd}
+.panel-print button{width:100%;background:#333;color:white;border-color:#333;font-size:12px;padding:10px}
+.panel-print button:hover{background:#555}
+.panel-print p{margin-top:10px}
+.reset-customization{font-size:11px;border:0;background:none;text-decoration:underline;text-underline-offset:3px;padding:0;margin-top:18px;color:#666}
+.customize-link{font-size:12px;text-decoration:none;padding:5px 9px;border:1px solid transparent;border-radius:3px;white-space:nowrap}
+.customize-link:hover{border-color:#ccc;background:white}
+select:focus-visible{outline:2px solid #2260a4;outline-offset:3px}
+.sheet-line,.plain-line{font-size:var(--sheet-size)}
+.chord-anchor{font-size:inherit}
+/* Placeholder text uses the same character grid as the chord anchors. */
+.placeholder-line{font-size:inherit}
+.hide-diagrams .diagram-line,.hide-rhythm .rhythm-line{display:none}
+.compact-spacing .sheet-line{margin-bottom:4px}
+.compact-spacing .sheet-line-wrap{padding-bottom:3px}
+.compact-spacing .song-section{margin-top:22px;margin-bottom:22px}
+.compact-spacing .section-heading{margin-bottom:9px}
+.focus .sheet-workspace{display:block;margin:0 auto 110px;max-width:1100px}
+.focus .customize-panel{display:none}
+@media(max-width:1000px){
+  .sheet-workspace{grid-template-columns:minmax(0,1fr);margin:15px auto 110px}
+  .customize-panel{grid-row:1;position:static;display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+  .customize-panel header{grid-column:1/-1}
+  .customize-panel .panel-print{margin-top:16px}
+  .customize-panel .reset-customization{justify-self:start;align-self:start}
+}
+@media(max-width:700px){
+  .sheet-workspace{padding:0 10px;margin:12px auto 140px;gap:12px}
+  .customize-panel{padding:18px 20px;gap:0 16px}
+  .customize-panel h2{font-size:17px}
+  .customize-panel label{font-size:11px}
+  .customize-link{font-size:10px;padding:5px 6px}
+  .focus .sheet-workspace{padding:0;margin-bottom:140px}
+}
+@media(max-width:380px){.customize-panel{display:block}}
+@media print{
+  .sheet-workspace,.focus .sheet-workspace{display:block;margin:0;padding:0;max-width:none}
+  .customize-panel{display:none!important}
+  .sheet-workspace .paper,.focus .sheet-workspace .paper{margin:0;padding:0;max-width:none;width:100%}
+  .sheet-line,.plain-line{font-size:var(--sheet-size)}
+  .chord-anchor{font-size:inherit}
+  body:not(.beginner) .reading-key,.focus .reading-key{display:none!important}
+  .beginner .reading-key{display:flex!important}
+  .sheet-line-wrap{break-inside:avoid;margin:0}
+}
+
+/* Chord controls keep the sheet's character grid while allowing direct selection. */
+button.chord-anchor{font-family:inherit;line-height:1.5;border:0;border-radius:2px;padding:0 3px 0 0;background:transparent}
+button.chord-anchor:hover{text-decoration:underline;text-underline-offset:3px;background:#f5f5f5}
+button.chord-anchor.is-active{background:var(--highlight)}
+.diagram-anchor,.rhythm-anchor,.lyric-line{cursor:pointer}
+.selection-hint{font-size:11px;line-height:1.7;color:#666;margin:12px 0 0}
+#clear-highlight{font-size:11px;white-space:nowrap}
+.focus .selection-hint{display:none}
+@media(max-width:1000px){.practice-inner{flex-wrap:wrap}}
+@media(max-width:700px){#clear-highlight{font-size:10px;padding:5px 8px}#play-position{min-width:110px}}
+@media print{.selection-hint{display:none}button.chord-anchor,button.chord-anchor.is-active{background:transparent}}
